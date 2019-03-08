@@ -28,7 +28,7 @@ Attachment: ${attachment}
 sendgrid.setApiKey(sendgridkey);
 
 let msg = {
-    to: to,
+    to: to.replace(/ /g , '').split(','),
     from: from,
     subject: subject,
     html: htmlbody
