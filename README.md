@@ -14,6 +14,7 @@ The Sendgrid section contains the following fields:
 # Configure Mail Section
 The Mail section contains the following fields:
 * **To Address** (Required): To Addresses. Separated by commas (,).
+* **Cc Address** (Optional): Cc Addresses. Separated by commas (,).
 * **From Address** (Required): From Address.
 * **Mail Subject** (Required): The subject of the email.
 * **Html Body** (Required): The (html) body of the email.

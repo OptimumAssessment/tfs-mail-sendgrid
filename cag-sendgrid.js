@@ -5,6 +5,7 @@ const sendgrid = require('@sendgrid/mail');
 
 const sendgridkey = tl.getInput('sendgridkey', true);
 const to = tl.getInput('to', true);
+const cc = tl.getInput('cc', false);
 const from = tl.getInput('from', true);
 const subject = tl.getInput('subject', true);
 const htmlbody = tl.getInput('htmlbody', true);
@@ -17,6 +18,7 @@ console.log(
 Mail Settings
 =============
 To Address: ${to}
+Cc Adddress: ${cc}
 From Adddress: ${from}
 Subject: ${subject}
 Body: ${htmlbody}
@@ -33,6 +35,10 @@ let msg = {
     subject: subject,
     html: htmlbody
 };
+
+if(cc) {
+    msg.cc = cc.replace(/ /g , '').split(',') 
+}
 
 try {
     if(addattachment) { 

@@ -13,8 +13,8 @@
   "demands": [],
   "version": {
     "Major": "1",
-    "Minor": "0",
-    "Patch": "14"
+    "Minor": "1",
+    "Patch": "10"
   },
   "minimumAgentVersion": "1.95.0",
   "instanceNameFormat": "SendGrid $(message)",
@@ -48,6 +48,15 @@
       "groupName": "mailsettings",
       "required": true,
       "helpMarkDown": "To Address"
+    },
+    {
+      "name": "cc",
+      "type": "string",
+      "label": "Cc Address",
+      "defaultValue": "",
+      "groupName": "mailsettings",
+      "required": false,
+      "helpMarkDown": "Cc Address"
     },
     {
       "name": "from",
