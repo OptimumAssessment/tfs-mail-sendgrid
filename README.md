@@ -33,3 +33,11 @@ The Mail section contains the following fields:
 * Add CC address
 
 1.0 | 7-3-2019: Initial version
+
+
+# Authors
+* Jean-Pierre Broeders
+
+
+# License
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/CitrusAndriessen/tfs-mail-sendgrid/blob/master/LICENSE) file for details.
