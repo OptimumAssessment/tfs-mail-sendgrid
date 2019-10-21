@@ -45,7 +45,7 @@ if(cc) {
 
 try {
     if(addattachment) { 
-        tl.checkPath(attachment, 'attachment');
+        task.checkPath(attachment, 'attachment');
         const fileBase64 = fs.readFileSync(attachment).toString('base64');
 
         msg.attachments = 
