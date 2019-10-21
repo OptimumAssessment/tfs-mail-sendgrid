@@ -1,16 +1,16 @@
 {
   "name": "tfs-mail-sendgrid",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Build/Release task for sending mails (including ability for sending attachments) via SendGrid",
   "main": "cag-sendgrid.js",
   "dependencies": {
     "@sendgrid/mail": "^6.3.1",
-    "azure-pipelines-task-lib": "^2.7.7",
+    "azure-pipelines-task-lib": "^2.9.3",
     "debounce": "^1.2.0",
     "fs": "^0.0.1-security",
     "nodemailer": "^5.1.1",
     "sendgrid": "^5.2.3",
-    "vso-task-lib": "^0.5.5"
+    "urix": "^0.1.0"
   },
   "devDependencies": {},
   "scripts": {

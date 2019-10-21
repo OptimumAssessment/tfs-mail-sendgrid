@@ -20,3 +20,16 @@ The Mail section contains the following fields:
 * **Html Body** (Required): The (html) body of the email.
 * **Add Attachment** (Optional): Should be true in case you need to add an attachment.
 * **Attachment** (Optional): Absolute path of the attachment.
+
+
+# Release notes
+
+1.2 | 21-10-2019
+* Migrate to azure-pipelines-task-lib/task NPM package
+* Fix issue when sending attachment from Windows agent
+
+1.1 | 8-3-2019
+* Support multiple addresses
+* Add CC address
+
+1.0 | 7-3-2019: Initial version

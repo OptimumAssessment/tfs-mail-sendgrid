@@ -1,16 +1,19 @@
 const path = require('path');
-const tl = require('vso-task-lib');
+const urix = require('urix');
+const task = require('azure-pipelines-task-lib/task');
 const fs = require('fs');
 const sendgrid = require('@sendgrid/mail');
 
-const sendgridkey = tl.getInput('sendgridkey', true);
-const to = tl.getInput('to', true);
-const cc = tl.getInput('cc', false);
-const from = tl.getInput('from', true);
-const subject = tl.getInput('subject', true);
-const htmlbody = tl.getInput('htmlbody', true);
-const addattachment = tl.getBoolInput('addattachment', true);
-const attachment = tl.getPathInput('attachment', false);
+const sendgridkey = task.getInput('sendgridkey', true);
+const to = task.getInput('to', true);
+const cc = task.getInput('cc', false);
+const from = task.getInput('from', true);
+const subject = task.getInput('subject', true);
+const htmlbody = task.getInput('htmlbody', true);
+const addattachment = task.getBoolInput('addattachment', true);
+let attachment = task.getPathInput('attachment', false);
+
+if (process.platform === 'win32') attachment = urix(attachment);
 
 console.log(
 `
@@ -59,5 +62,5 @@ try {
       
 } catch (error) {
     console.log(error);    
-    tl.exit(1);
+    task.setResult(Failed);
 }
