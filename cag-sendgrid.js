@@ -13,7 +13,7 @@ const htmlbody = task.getInput('htmlbody', true);
 const addattachment = task.getBoolInput('addattachment', true);
 let attachment = task.getPathInput('attachment', false);
 
-if (process.platform === 'win32') attachment = urix(attachment);
+if (attachment && process.platform === 'win32') attachment = urix(attachment);
 
 console.log(
 `

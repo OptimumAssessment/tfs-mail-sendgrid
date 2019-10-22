@@ -1,6 +1,6 @@
 {
   "name": "tfs-mail-sendgrid",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Build/Release task for sending mails (including ability for sending attachments) via SendGrid",
   "main": "cag-sendgrid.js",
   "dependencies": {
