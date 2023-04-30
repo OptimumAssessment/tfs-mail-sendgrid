@@ -5,7 +5,7 @@
   "main": "cag-sendgrid.js",
   "dependencies": {
     "@sendgrid/mail": "^6.3.1",
-    "azure-pipelines-task-lib": "^2.9.3",
+    "azure-pipelines-task-lib": "^4.3.1",
     "debounce": "^1.2.0",
     "fs": "^0.0.1-security",
     "nodemailer": "^5.1.1",
