@@ -4,7 +4,7 @@
   "description": "Build/Release task for sending mails (including ability for sending attachments) via SendGrid",
   "main": "cag-sendgrid.js",
   "dependencies": {
-    "@sendgrid/mail": "^6.3.1",
+    "@sendgrid/mail": "^7.7.0",
     "azure-pipelines-task-lib": "^4.3.1",
     "debounce": "^1.2.0",
     "fs": "^0.0.1-security",
